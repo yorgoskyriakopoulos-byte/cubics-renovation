@@ -1,0 +1,203 @@
+.formContainer {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-8);
+  box-shadow: var(--shadow-sm);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.stepIndicator {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-8);
+  position: relative;
+}
+
+.stepIndicator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-grey-200);
+  z-index: 0;
+}
+
+.stepDot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--color-grey-200);
+  color: var(--color-grey-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  z-index: 1;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+.stepDot.active {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.stepDot.completed {
+  background-color: var(--color-black);
+  color: var(--color-white);
+}
+
+.stepContent {
+  animation: fadeIn var(--transition-fast) forwards;
+}
+
+.stepTitle {
+  margin-bottom: var(--spacing-6);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+  margin-bottom: var(--spacing-6);
+}
+
+.label {
+  font-weight: 500;
+  color: var(--color-grey-900);
+}
+
+.input, .select {
+  padding: var(--spacing-3) var(--spacing-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+  background-color: var(--color-white);
+  color: var(--color-text);
+}
+
+.input:focus, .select:focus {
+  border-color: var(--color-black);
+}
+
+.radioGroup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--spacing-3);
+}
+
+.radioLabel {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+  padding: var(--spacing-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast);
+}
+
+.radioLabel:hover {
+  background-color: var(--color-grey-50);
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioInput:checked + .radioCustom {
+  border-color: var(--color-black);
+  background-color: var(--color-black);
+}
+
+.radioInput:checked ~ .radioText {
+  font-weight: 600;
+}
+
+.radioLabel:has(input:checked) {
+  border-color: var(--color-black);
+  background-color: var(--color-grey-50);
+}
+
+.radioCustom {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid var(--color-grey-300);
+  transition: all var(--transition-fast);
+}
+
+.radioText {
+  color: var(--color-grey-800);
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-8);
+  padding-top: var(--spacing-6);
+  border-top: 1px solid var(--color-border);
+}
+
+.btn {
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: none;
+}
+
+.btnPrev {
+  background-color: transparent;
+  color: var(--color-grey-600);
+}
+
+.btnPrev:hover {
+  color: var(--color-black);
+}
+
+.btnNext {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  margin-left: auto;
+}
+
+.btnNext:hover {
+  opacity: 0.9;
+}
+
+.btnSubmit {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  width: 100%;
+}
+
+.btnSubmit:hover {
+  opacity: 0.9;
+}
+
+.successMessage {
+  text-align: center;
+  padding: var(--spacing-12) 0;
+}
+
+.successIcon {
+  font-size: 4rem;
+  margin-bottom: var(--spacing-4);
+  color: #10b981;
+}
+
+@media (min-width: 768px) {
+  .radioGroup {
+    grid-template-columns: 1fr 1fr;
+  }
+}

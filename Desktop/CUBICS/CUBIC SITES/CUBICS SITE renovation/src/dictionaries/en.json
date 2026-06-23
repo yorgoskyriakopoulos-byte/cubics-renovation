@@ -1,0 +1,120 @@
+{
+  "navigation": {
+    "home": "Home",
+    "renovation": "Renovation",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "cta": "Request Consultation"
+  },
+  "home": {
+    "hero": {
+      "title": "Architectural Renovation in Patras",
+      "subtitle": "Transforming residences through structure, light, and materials."
+    },
+    "trust": {
+      "title": "Reliability & Quality",
+      "text": "With an emphasis on detail and premium materials, we deliver projects that stand the test of time. Serving Patras and surrounding areas (up to 30 km)."
+    },
+    "services": {
+      "title": "Our Services",
+      "apartment": "Apartment Renovation",
+      "house": "House Renovation",
+      "villa": "Villa Transformation"
+    },
+    "projects": {
+      "title": "Featured Projects"
+    },
+    "cta": {
+      "title": "Start Your Renovation",
+      "button": "Request Estimation"
+    }
+  },
+  "renovation": {
+    "title": "Renovation Services",
+    "subtitle": "Comprehensive high-end renovation solutions.",
+    "process": {
+      "title": "Our Process",
+      "step1": {
+        "title": "1. Site Evaluation",
+        "text": "We visit your property for a full assessment of its needs and potential."
+      },
+      "step2": {
+        "title": "2. Architectural Proposal",
+        "text": "We design the optimal solution based on your budget and aesthetics, presenting 3D visualizations."
+      },
+      "step3": {
+        "title": "3. Implementation & Construction",
+        "text": "We undertake the full execution of the project with specialized crews and continuous supervision."
+      }
+    }
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "See how we transform spaces, combining functionality and aesthetic excellence."
+  },
+  "about": {
+    "title": "About Us",
+    "content": "CUBICS is a leading renovation company in Patras. We focus on premium residential projects, offering high-quality services."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Fill out the form to discuss your project needs.",
+    "form": {
+      "step1": {
+        "title": "Personal Details",
+        "name": "Full Name",
+        "phone": "Phone (Required)",
+        "email": "Email (Optional)"
+      },
+      "step2": {
+        "title": "Property Details",
+        "location": "Area / Address (Required)",
+        "type": "Property Type",
+        "types": {
+          "apartment": "Apartment",
+          "house": "House",
+          "villa": "Villa",
+          "commercial": "Commercial Space"
+        }
+      },
+      "step3": {
+        "title": "The Project",
+        "type": "Renovation Type",
+        "types": {
+          "interior": "Interior Renovation",
+          "full": "Full Renovation",
+          "kitchen": "Kitchen",
+          "bathroom": "Bathroom",
+          "structural": "Structural / Energy Upgrade"
+        },
+        "timeline": "Timeline",
+        "timelines": {
+          "immediate": "Immediate",
+          "short": "1-3 months",
+          "medium": "3-6 months",
+          "planning": "In planning phase"
+        }
+      },
+      "step4": {
+        "title": "Budget (Optional)",
+        "budget": "Estimated Budget",
+        "budgets": {
+          "low": "Low",
+          "medium": "Medium",
+          "high": "High",
+          "flexible": "Flexible"
+        }
+      },
+      "buttons": {
+        "next": "Next",
+        "prev": "Previous",
+        "submit": "Request Architectural Consultation",
+        "success": "Your request has been sent successfully!"
+      }
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  }
+}

@@ -1,0 +1,58 @@
+.footer {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding-top: var(--spacing-16);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+  padding-bottom: var(--spacing-16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  max-width: 400px;
+}
+
+.brandName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-2);
+}
+
+.addressBlock {
+  font-style: normal;
+  color: var(--color-grey-400);
+  line-height: 1.8;
+  font-size: 0.875rem;
+}
+
+.contactLink {
+  color: var(--color-grey-300);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contactLink:hover {
+  color: var(--color-white);
+}
+
+.bottom {
+  padding: var(--spacing-6) 0;
+  font-size: 0.875rem;
+  color: var(--color-grey-500);
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
