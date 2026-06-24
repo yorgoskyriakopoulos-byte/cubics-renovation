@@ -17,7 +17,7 @@ export default function HeroLanding({ dict }: { dict: any }) {
       <div className={styles.overlay}></div>
       <div className={`container ${styles.container}`}>
         <div className={styles.content}>
-          <h1 className={styles.headline}>CUBICS TEST 12345</h1>
+          <h1 className={styles.headline}>{content.headline}</h1>
           <p className={styles.subheadline}>{content.subheadline}</p>
           
           <ul className={styles.bullets}>
