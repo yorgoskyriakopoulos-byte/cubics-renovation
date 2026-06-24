@@ -1,0 +1,49 @@
+.stickyBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: var(--spacing-3) var(--spacing-2);
+  z-index: 1000;
+  border-top: 1px solid var(--color-border);
+}
+
+.stickyBar a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-1);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--color-text);
+  flex: 1;
+  transition: opacity var(--transition-fast);
+}
+
+.stickyBar a:active {
+  opacity: 0.7;
+}
+
+.btnCall {
+  color: var(--color-black) !important;
+}
+
+.btnWhatsapp {
+  color: #25D366 !important;
+}
+
+.btnViber {
+  color: #7360F2 !important;
+}
+
+@media (min-width: 768px) {
+  .stickyBar {
+    display: none;
+  }
+}

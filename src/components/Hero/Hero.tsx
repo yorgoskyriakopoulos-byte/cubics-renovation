@@ -21,7 +21,7 @@ export default function Hero({
         sizes="100vw"
       />
       <div className={`container fade-in ${styles.content}`}>
-        <h1 className={styles.title}>{dict.home.hero.title}</h1>
+        <h1 className={styles.title}>CUBICS TEST 12345</h1>
         <p className={styles.subtitle}>{dict.home.hero.subtitle}</p>
         <Link href={`/${lang}/contact`} className={styles.cta}>
           {dict.navigation.cta}

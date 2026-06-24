@@ -109,9 +109,83 @@
       "buttons": {
         "next": "Επόμενο",
         "prev": "Προηγούμενο",
-        "submit": "Request Architectural Consultation",
-        "success": "Το αίτημά σας στάλθηκε με επιτυχία!"
+        "submit": "ΑΠΟΣΤΟΛΗ ΑΙΤΗΜΑΤΟΣ",
+        "success": "Ευχαριστούμε. Μέλος της ομάδας της CUBICS θα επικοινωνήσει μαζί σας εντός 24 ωρών."
       }
+    }
+  },
+  "landing": {
+    "hero": {
+      "headline": "Ανακαινίζουμε το σπίτι σας χωρίς άγχος, καθυστερήσεις και εκπλήξεις.",
+      "subheadline": "Από τον σχεδιασμό μέχρι την ολοκλήρωση του έργου, η CUBICS αναλαμβάνει κάθε στάδιο της ανακαίνισης με μία ενιαία ομάδα.",
+      "bullets": [
+        "Ολικές Ανακαινίσεις",
+        "Ανακαινίσεις Διαμερισμάτων",
+        "Κουζίνες & Μπάνια",
+        "Εσωτερικοί Χώροι",
+        "Πάτρα & γύρω περιοχές"
+      ],
+      "primaryCTA": "ΚΑΛΕΣΤΕ ΤΩΡΑ",
+      "whatsappCTA": "WHATSAPP",
+      "viberCTA": "VIBER"
+    },
+    "whyCubics": {
+      "title": "Γιατί οι ιδιοκτήτες επιλέγουν την CUBICS",
+      "content1": "Οι περισσότερες ανακαινίσεις αποτυγχάνουν λόγω κακού συντονισμού.",
+      "content2": "Στην CUBICS ο σχεδιασμός, η οργάνωση και η υλοποίηση λειτουργούν ως ένα ενιαίο σύστημα.",
+      "benefits": [
+        "Ένας υπεύθυνος για όλο το έργο",
+        "Σαφής προϋπολογισμός",
+        "Συνεχής ενημέρωση προόδου",
+        "Επαγγελματικός σχεδιασμός",
+        "Ποιοτικά συνεργεία"
+      ]
+    },
+    "process": {
+      "title": "Πώς δουλεύουμε",
+      "steps": [
+        "Δωρεάν επικοινωνία",
+        "Επίσκεψη στον χώρο",
+        "Πρόταση & Προϋπολογισμός",
+        "Υλοποίηση",
+        "Παράδοση έργου"
+      ]
+    },
+    "serviceArea": {
+      "title": "Εξυπηρετούμε",
+      "locations": [
+        "Patras",
+        "Rio",
+        "Paralia Patron",
+        "Vrachnaiika",
+        "Ovria",
+        "Kato Achaia",
+        "And all areas within approximately 30 km of Patras."
+      ]
+    },
+    "trust": {
+      "title": "Το σπίτι σας είναι σημαντική επένδυση",
+      "points": [
+        "Professional planning",
+        "Transparent budgeting",
+        "Clear communication",
+        "Quality execution",
+        "Reliable project management"
+      ]
+    },
+    "leadForm": {
+      "title": "Ζητήστε δωρεάν εκτίμηση έργου"
+    },
+    "finalCTA": {
+      "headline": "Σκέφτεστε ανακαίνιση;",
+      "content": "Μιλήστε μαζί μας σήμερα και λάβετε μια πρώτη εκτίμηση για το έργο σας.",
+      "address": "CUBICS Architecture\nAgiou Andreou 9\nPatras",
+      "phone1": "+30 2610 222188",
+      "phone2": "+30 6933217835",
+      "btnCall": "ΚΑΛΕΣΤΕ ΤΩΡΑ",
+      "btnWhatsapp": "WHATSAPP",
+      "btnViber": "VIBER",
+      "btnEstimate": "ΔΩΡΕΑΝ ΕΚΤΙΜΗΣΗ"
     }
   },
   "footer": {

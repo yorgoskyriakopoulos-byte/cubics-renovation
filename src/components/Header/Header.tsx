@@ -40,11 +40,18 @@ export default function Header({
 
         {/* Desktop Menu */}
         <nav className={styles.menu}>
-          {navLinks.map((link) => (
-            <Link key={link.href} href={link.href} className={styles.menuLink}>
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = pathname.startsWith(link.href)
+            return (
+              <Link 
+                key={link.href} 
+                href={link.href} 
+                className={`${styles.menuLink} ${isActive ? styles.active : ''}`}
+              >
+                {link.label}
+              </Link>
+            )
+          })}
         </nav>
 
         <div className={styles.actions}>
@@ -56,16 +63,19 @@ export default function Header({
 
       {/* Mobile Menu */}
       <div className={`${styles.mobileMenu} ${menuOpen ? styles.open : ''}`}>
-        {navLinks.map((link) => (
-          <Link 
-            key={link.href} 
-            href={link.href} 
-            className={styles.mobileMenuLink}
-            onClick={() => setMenuOpen(false)}
-          >
-            {link.label}
-          </Link>
-        ))}
+        {navLinks.map((link) => {
+          const isActive = pathname.startsWith(link.href)
+          return (
+            <Link 
+              key={link.href} 
+              href={link.href} 
+              className={`${styles.mobileMenuLink} ${isActive ? styles.active : ''}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          )
+        })}
       </div>
     </header>
   )

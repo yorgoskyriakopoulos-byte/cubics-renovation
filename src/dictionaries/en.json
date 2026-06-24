@@ -109,9 +109,83 @@
       "buttons": {
         "next": "Next",
         "prev": "Previous",
-        "submit": "Request Architectural Consultation",
-        "success": "Your request has been sent successfully!"
+        "submit": "SEND REQUEST",
+        "success": "Thank you. A member of the CUBICS team will contact you within 24 hours."
       }
+    }
+  },
+  "landing": {
+    "hero": {
+      "headline": "We renovate your home without stress, delays, and surprises.",
+      "subheadline": "From design to completion, CUBICS handles every stage of the renovation with a single unified team.",
+      "bullets": [
+        "Full Renovations",
+        "Apartment Renovations",
+        "Kitchens & Bathrooms",
+        "Interior Spaces",
+        "Patras & surrounding areas"
+      ],
+      "primaryCTA": "CALL NOW",
+      "whatsappCTA": "WHATSAPP",
+      "viberCTA": "VIBER"
+    },
+    "whyCubics": {
+      "title": "Why Owners Choose CUBICS",
+      "content1": "Most renovations fail due to poor coordination.",
+      "content2": "At CUBICS, design, organization, and execution work as a single system.",
+      "benefits": [
+        "One manager for the whole project",
+        "Clear budget",
+        "Continuous progress updates",
+        "Professional design",
+        "Quality crews"
+      ]
+    },
+    "process": {
+      "title": "How We Work",
+      "steps": [
+        "Free communication",
+        "Site visit",
+        "Proposal & Budget",
+        "Implementation",
+        "Project delivery"
+      ]
+    },
+    "serviceArea": {
+      "title": "We Serve",
+      "locations": [
+        "Patras",
+        "Rio",
+        "Paralia Patron",
+        "Vrachnaiika",
+        "Ovria",
+        "Kato Achaia",
+        "And all areas within approximately 30 km of Patras."
+      ]
+    },
+    "trust": {
+      "title": "Your Home is an Important Investment",
+      "points": [
+        "Professional planning",
+        "Transparent budgeting",
+        "Clear communication",
+        "Quality execution",
+        "Reliable project management"
+      ]
+    },
+    "leadForm": {
+      "title": "Request a Free Project Estimate"
+    },
+    "finalCTA": {
+      "headline": "Thinking of renovating?",
+      "content": "Speak with us today and get an initial estimate for your project.",
+      "address": "CUBICS Architecture\nAgiou Andreou 9\nPatras",
+      "phone1": "+30 2610 222188",
+      "phone2": "+30 6933217835",
+      "btnCall": "CALL NOW",
+      "btnWhatsapp": "WHATSAPP",
+      "btnViber": "VIBER",
+      "btnEstimate": "FREE ESTIMATE"
     }
   },
   "footer": {

@@ -1,7 +1,15 @@
 import { getDictionary } from '@/dictionaries'
 import { Locale } from '@/i18n.config'
-import Hero from '@/components/Hero/Hero'
-import Link from 'next/link'
+import StickyMobileBar from '@/components/StickyMobileBar/StickyMobileBar'
+import FloatingContactBtn from '@/components/FloatingContactBtn/FloatingContactBtn'
+import HeroLanding from '@/components/HeroLanding/HeroLanding'
+import WhyCubics from '@/components/WhyCubics/WhyCubics'
+import ProjectGallery from '@/components/ProjectGallery/ProjectGallery'
+import ProcessSection from '@/components/ProcessSection/ProcessSection'
+import ServiceArea from '@/components/ServiceArea/ServiceArea'
+import TrustSection from '@/components/TrustSection/TrustSection'
+import ContactForm from '@/components/ContactForm/ContactForm'
+import FinalCTA from '@/components/FinalCTA/FinalCTA'
 import styles from './page.module.css'
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
@@ -11,40 +19,29 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
   return (
     <>
-      <Hero dict={dict} lang={locale} />
+      <StickyMobileBar />
+      <FloatingContactBtn />
       
-      <section className={styles.section}>
-        <div className="container">
-          <h2 className={styles.trustTitle}>{dict.home.trust.title}</h2>
-          <p className={styles.trustText}>{dict.home.trust.text}</p>
-        </div>
-      </section>
-
-      <section className={`${styles.section} ${styles.sectionAlt}`}>
-        <div className="container">
-          <h2 className={styles.servicesTitle}>{dict.home.services.title}</h2>
-          <div className={styles.servicesGrid}>
-            <div className={styles.serviceCard}>
-              <h3>{dict.home.services.apartment}</h3>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>{dict.home.services.house}</h3>
-            </div>
-            <div className={styles.serviceCard}>
-              <h3>{dict.home.services.villa}</h3>
+      <main>
+        <HeroLanding dict={dict} />
+        <WhyCubics dict={dict} />
+        <ProjectGallery />
+        <ProcessSection dict={dict} />
+        <ServiceArea dict={dict} />
+        <TrustSection dict={dict} />
+        
+        {/* Lead Form Section */}
+        <section id="contact" className={styles.leadFormSection}>
+          <div className="container">
+            <h2 className={styles.leadFormTitle}>{dict.landing.leadForm.title}</h2>
+            <div className={styles.formWrapper}>
+              <ContactForm dict={dict} />
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section className={styles.ctaSection}>
-        <div className="container">
-          <h2>{dict.home.cta.title}</h2>
-          <Link href={`/${lang}/contact`} className={styles.ctaBtn}>
-            {dict.home.cta.button}
-          </Link>
-        </div>
-      </section>
+        <FinalCTA dict={dict} />
+      </main>
     </>
   )
 }
