@@ -33,7 +33,7 @@ export default function Header({
             alt="CUBICS Logo" 
             width={120} 
             height={32} 
-            className={styles.logoImage}
+            style={{ width: 'auto', height: '32px' }}
             priority
           />
         </Link>

@@ -23,12 +23,6 @@
   align-items: center;
 }
 
-.logoImage {
-  width: auto;
-  max-height: 32px;
-  object-fit: contain;
-}
-
 .menu {
   display: none;
 }
